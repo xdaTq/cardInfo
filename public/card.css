@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #17141d;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+.card-list {
+    display: flex;
+    padding: 5rem;
+}  
+
+.card {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    height: 400px;
+    width: 350px;
+    min-width: 250px;
+    padding: 1.5rem;
+    border-radius: 15px;
+    background: #17141d;
+    box-shadow: -1rem 0 3rem #000000;
+    transition: .2s;
+}
+
+.card:hover {
+    transform: translateY(-2rem);
+}
+
+.card:hover~.card {
+    transform: translateX(130px);
+}
+
+.card:not(:first-child) {
+    margin-left: -130px;
+}
+
+.card-header h2:hover {
+    background: linear-gradient(90deg, #7700ff, #ff00b7);
+    text-shadow: none;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.card-header p {
+    color: #999999;
+}
+
+.profile {
+    position: relative;
+    display: grid;
+    grid-template-columns: 75px 1fr;
+    align-items: center;
+    margin: 3rem 0 0;
+}
+
+.profile-name {
+    font-style: normal;
+    font-weight: 700;
+    color: #7a7a8c;
+}
